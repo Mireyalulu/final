@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="final.Administrador">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="ADMINISTRADOR" FontSize="Large" HorizontalOptions="Center"/>
+                <Label x:Name="lbldata0" HorizontalTextAlignment="Center"  AbsoluteLayout.LayoutBounds=".5,.1,.5,.05" AbsoluteLayout.LayoutFlags="All" FontSize="Small" />
+                <Label x:Name="lbldata1" HorizontalTextAlignment="Center"  AbsoluteLayout.LayoutBounds=".5,.15,.5,.05" AbsoluteLayout.LayoutFlags="All" FontSize="Small" />
+                <Label x:Name="lbldata2" HorizontalTextAlignment="Center"  AbsoluteLayout.LayoutBounds=".5,.2,.7,.05" AbsoluteLayout.LayoutFlags="All" FontSize="Small" />
+                <Button x:Name="btnPos" Text="Ir a Tareas" Clicked="btnPos_Clicked" BackgroundColor="LightBlue" />
+                <Image Source="admin1.jpg" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill"   />
+                <Button x:Name="btnUser" Text="Agregar Usuarios" Clicked="btnUser_Clicked"  BackgroundColor="SeaGreen"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

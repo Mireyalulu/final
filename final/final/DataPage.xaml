@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="final.DataPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="uñas.jpg" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill"   />
+                <Label Text="Usuario:"/>
+                <Entry x:Name="txtUser" Placeholder="Usuario" />
+                <Label Text="Contraeña:"/>
+                <Entry x:Name="txtPass" Placeholder="Contraseña" />
+                <Button x:Name="btn_Login" Text="Entrar" Clicked="btn_Login_Clicked" BackgroundColor="Plum"/>
+                <Button x:Name="btn_Registrarse" Text="Registrarse" Clicked="btn_Registrarse_Clicked"  BackgroundColor="Plum"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="final.Productos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="PRODUCTOS" FontSize="Large" HorizontalOptions="Center"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="ID:" Grid.Column="0" Grid.Row="0"/>
+                <Entry x:Name="txtID" Placeholder="ID" Grid.Column="1" Grid.Row="0" />
+                <Label Text="Nombre:" Grid.Column="0" Grid.Row="1"/>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Column="1" Grid.Row="1" />
+                <Label Text="Descripcion:" Grid.Column="0" Grid.Row="2"/>
+                <Entry x:Name="txtDescripcion" Placeholder="Descripcion" Grid.Column="1" Grid.Row="2" />
+                <Label Text="Precio:" Grid.Column="0" Grid.Row="3"/>
+                <Entry x:Name="txtPrecio" Placeholder="Precio" Grid.Column="1" Grid.Row="3" />
+                <Label Text="Imagen:" Grid.Column="0" Grid.Row="4"/>
+                <Entry x:Name="txtImagen" Placeholder="Imagen" Grid.Column="1" Grid.Row="4" />
+            </Grid>
+            <Button x:Name="btn_Producto" Text="Agregar Producto" Clicked="btn_Producto_Clicked"  BackgroundColor="Plum" Grid.Column="0" Grid.Row="5"/>
+            <Button x:Name="Button_Actualizar" Text="Actualizar registro" Clicked="Button_Actualizar_Clicked"  Grid.Column="1" Grid.Row="6" BackgroundColor="Plum"></Button>
+            <Button x:Name="Button_Eliminar" Text="Eliminar registro" Clicked="Button_Eliminar_Clicked"  Grid.Column="1" Grid.Row="7" BackgroundColor="Plum"></Button>
+            <Image Source="productos.jpg" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
